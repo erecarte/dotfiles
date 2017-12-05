@@ -21,7 +21,7 @@ brew install terraform
 brew install tree
 brew install wget --with-iri
 brew install graphviz
-
+brew install go
 
 # Install Cask
 brew tap caskroom/cask
