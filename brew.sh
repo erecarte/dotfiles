@@ -15,7 +15,6 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-brew install maven
 brew install node
 brew install terraform
 brew install tree
@@ -46,6 +45,7 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 
 npm install -g grunt-cli
+brew install maven
 
 # Remove outdated versions from the cellar.
 brew cleanup
