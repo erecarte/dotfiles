@@ -20,7 +20,9 @@ brew install terraform
 brew install tree
 brew install wget --with-iri
 brew install graphviz
+brew install plantuml
 brew install go
+brew install jq
 
 # Install Cask
 brew tap caskroom/cask
@@ -28,7 +30,7 @@ brew tap caskroom/cask
 brew cask install java
 brew cask install atom
 brew cask install google-chrome
-brew cask install google-chrome-canary
+brew cask install caskroom/versions/google-chrome-canary
 brew cask install intellij-idea
 brew cask install spotify
 brew cask install slack
