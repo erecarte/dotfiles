@@ -28,6 +28,7 @@ brew install jq
 brew tap caskroom/cask
 
 brew cask install java
+brew cask install java8
 brew cask install atom
 brew cask install google-chrome
 brew cask install caskroom/versions/google-chrome-canary
