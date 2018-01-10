@@ -50,6 +50,7 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 npm install -g grunt-cli
 brew install maven
+brew install gradle
 
 # Remove outdated versions from the cellar.
 brew cleanup
