@@ -23,6 +23,7 @@ brew install graphviz
 brew install plantuml
 brew install go
 brew install jq
+brew install awscli
 
 # Install Cask
 brew tap caskroom/cask
