@@ -43,6 +43,7 @@ brew cask install iterm2
 brew cask install clipy
 brew cask install sequel-pro
 brew cask install postman
+brew cask install gpg-suite
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
