@@ -24,6 +24,11 @@ brew install plantuml
 brew install go
 brew install jq
 brew install awscli
+brew install fish
+
+# Install Oh My Fish and bobthefish
+curl -L https://get.oh-my.fish | fish
+omf install bobthefish
 
 # Install Cask
 brew tap caskroom/cask
@@ -48,10 +53,14 @@ brew cask install gpg-suite
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
-
 npm install -g grunt-cli
 brew install maven
 brew install gradle
+
+apm install go-plus
+apm install hyperclick
+apm install linter-golinter
+apm install platformio-ide-terminal
 
 # Remove outdated versions from the cellar.
 brew cleanup
