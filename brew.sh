@@ -29,20 +29,20 @@ brew install git-secrets
 brew install gnutls
 brew install yubico-piv-tool
 brew install dep
-brew install go-swagger
 brew install travis
 brew install vault
 brew install hub
 brew install fish
 brew install bash-completion
-brew install avg-antivirus
+brew install yq
+
+brew tap go-swagger/go-swagger
+brew install go-swagger
 
 # Install Cask
 brew tap caskroom/cask
 
 brew cask install java
-brew cask install java8
-brew cask install atom
 brew cask install google-chrome
 brew cask install intellij-idea
 brew cask install spotify
@@ -58,7 +58,11 @@ brew cask install zoomus
 brew cask install caskroom/fonts/font-firacode-nerd-font
 brew cask install goland
 brew cask install 1password
-
+brew cask install avg-antivirus
+brew cask install visual-studio-code
+brew tap caskroom/versions
+brew cask install java8
+brew cask install typora
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
@@ -70,3 +74,11 @@ brew install gradle
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Make fish the default shell
+echo /usr/local/bin/fish | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
+
+# Install oh my fish and bobthefish theme
+curl -L https://get.oh-my.fish | fish
+omf install bobthefish
