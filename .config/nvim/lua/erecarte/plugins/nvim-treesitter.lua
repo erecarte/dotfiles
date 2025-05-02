@@ -54,10 +54,10 @@ return { -- Highlight, edit, and navigate code
       incremental_selection = {
         enable = true,
         keymaps = {
-          init_selection = '<A-Right>', -- set to `false` to disable one of the mappings
-          node_incremental = '<A-Right>',
+          init_selection = '<A-Up>', -- set to `false` to disable one of the mappings
+          node_incremental = '<A-Up>',
           scope_incremental = false,
-          node_decremental = '<A-Left>',
+          node_decremental = '<A-Down>',
         },
       },
     }

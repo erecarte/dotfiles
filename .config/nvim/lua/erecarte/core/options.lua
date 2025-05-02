@@ -91,10 +91,14 @@ vim.opt.scrolloff = 10
 vim.opt.confirm = true
 
 -- Enable folding ( setup in nvim-ufo )
-vim.o.foldenable = true -- Enable folding by default
-vim.o.foldmethod = 'manual' -- Default fold method (change as needed)
-vim.o.foldlevel = 99 -- Open most folds by default
-vim.o.foldcolumn = '0'
+vim.opt.foldcolumn = '0'
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldtext = ''
+
+vim.opt.foldnestmax = 3
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
 
 -- Disable Swap files
 vim.opt.swapfile = false
