@@ -123,3 +123,7 @@ function .cloneRepo() {
 	vim .
 	popd
 }
+
+function .dockerStopAllContainers() {
+	docker rm -fv $(docker ps -a -q)
+}
