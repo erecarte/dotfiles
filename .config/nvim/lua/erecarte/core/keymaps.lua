@@ -43,6 +43,16 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set({ 'n', 'v', 'x' }, '<C-a>', 'gg0vG$', { noremap = true, silent = true, desc = 'Select all' })
 vim.keymap.set({ 'n', 'v', 'x' }, '<BS>', '"_X', { noremap = true, silent = true, desc = 'Delete' })
 vim.keymap.set({ 'n', 'v', 'x' }, '<Del>', '"_x', { noremap = true, silent = true, desc = 'Delete' })
+
+-- Move text up and down
+vim.keymap.set('n', '<A-Up>', ':m .-2<CR>==', { noremap = true, silent = true, desc = 'Move line up' })
+vim.keymap.set('n', '<A-Down>', ':m .+1<CR>==', { noremap = true, silent = true, desc = 'Move line down' })
+vim.keymap.set('v', '<A-Down>', ":m '>+1<CR>gv=gv", { noremap = true, silent = true, desc = 'Move text down' })
+vim.keymap.set('v', '<A-Up>', ":m '<-2<CR>gv=gv", { noremap = true, silent = true, desc = 'Move text up' })
+
+vim.keymap.set('v', '>', '>gv', { noremap = true, silent = true, desc = 'Indent more' })
+vim.keymap.set('v', '<', '<gv', { noremap = true, silent = true, desc = 'Indent less' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
