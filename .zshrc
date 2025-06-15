@@ -127,3 +127,16 @@ function .cloneRepo() {
 function .dockerStopAllContainers() {
 	docker rm -fv $(docker ps -a -q)
 }
+
+# goenv setup
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+
+# Enable Ctrl+R history search with preview
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
+alias ls="eza -l --git --icons=always"
+alias la="eza -la --git --icons=always"
